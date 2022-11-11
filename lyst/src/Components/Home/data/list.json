@@ -1,31 +1,153 @@
-[{
-    "title":"WOMEN'S CLOTHING",
-    "data":[{"text":"Jackets"},{"text":"Shorts"},{"text":"Pants"},{"text":"Nightwear"},{"text":"Skirts"},{"text":"Knitwear"},{"text":"Activewear"},{"text":"Coats"},{"text":"Dresses"},{"text":"Suits"},{"text":"Tops"},{"text":"Jumpsuits"},{"text":"Jeans"},{"text":"Beachwear"}]
-}, {
-    "title":"MEN'S CLOTHING",
-    "data":[{"text":"Jackets"},{"text":"Shorts"},{"text":"Shirts"},{"text":"Pants"},{"text":"T-shirts"},{"text":"Nightwear"},{"text":"Sweaters and Knitwear"},{"text":"Activewear"},{"text":"Coats"},{"text":"Suits"},{"text":"Underwear"},{"text":"Jeans"},{"text":"Beachwear"}]
-},{
-    "title":"WOMEN'S SHOES",
-    "data":[{"text":"Flats"},{"text":"Heels"},{"text":"Boots"},{"text":"Sneakers"}]
-},{
-    "title":"MEN'S SHOES",
-    "data":[{"text":"Boots"},{"text":"Sandals"},{"text":"Slip-ons"},{"text":"Sneakers"},{"text":"Lace-ups"}]
-},{
-    "title":"WOMEN'S ACCESSORIES",
-    "data":[{"text":"Cases"},{"text":"Wallets and cardholders"},{"text":"Scarves"},{"text":"Watches"},{"text":"Face masks"},{"text":"Hats"},{"text":"Belts"},{"text":"Umbrellas"},{"text":"Sunglasses"},{"text":"Gloves"},{"text":"Hair"}]
-},{
-    "title":"MEN'S ACCESSORIES",
-    "data":[{"text":"Cufflinks"},{"text":"Scarves and handkerchiefs"},{"text":"Watches"},{"text":"Face Masks"},{"text":"Hats"},{"text":"Belts"},{"text":"Sunglasses"},{"text":"Gloves"},{"text":"Wallets and cardholders"},{"text":"Ties"}]
-},{
-    "title":"WOMEN'S BAGS",
-    "data":[{"text":"Totes and shopper bags"},{"text":"Clutches"},{"text":"Shoulder bags"},{"text":"Holdalls and weekend bags"},{"text":"Beach and straw bags"},{"text":"Briefcases and work bags"},{"text":"Crossbody bags"},{"text":"Hobo bags"},{"text":"Top-handle bags"},{"text":"Belt bags"},{"text":"Bucket bags"},{"text":"Makeup bags"},{"text":"Bag accessories"},{"text":"Backpacks"}]
-},{
-    "title":"MEN'S BAGS",
-    "data":[{"text":"Tote bags"},{"text":"Cases"},{"text":"Pouches"},{"text":"Gym bags"},{"text":"Messenger"},{"text":"Holdalls and weekend bags"},{"text":"Briefcases and work bags"},{"text":"Toiletry bags"},{"text":"Belt bags"},{"text":"Luggage and suitcases"},{"text":"Backpacks"}]
-},{
-    "title":"WOMEN'S JEWELRY",
-    "data":[{"text":"Necklaces"},{"text":"Brooches"},{"text":"Rings"},{"text":"Earrings"},{"text":"Bracelets"}]
-},{
-    "title":"MEN'S JEWELRY",
-    "data":[{"text":"Rings"},{"text":"Bracelets"},{"text":"Necklaces"}]
-}]
+[
+  {
+    "title": "WOMEN'S CLOTHING",
+    "data": [
+      { "text": "Tops" },
+      { "text": "Jumpsuits and rompers" },
+      { "text": "Shorts" },
+      { "text": "Nightwear and sleepwear" },
+      { "text": "Lingerie" },
+      { "text": "Beachwear and swimwear" },
+      { "text": "Outfits" },
+      { "text": "Jackets" },
+      { "text": "Sweaters and Knitwear" },
+      { "text": "Suits" },
+      { "text": "Skirts" },
+      { "text": "Jeans" },
+      { "text": "Coats" },
+      { "text": "+More" }
+    ]
+  },
+  {
+    "title": "MEN'S CLOTHING",
+    "data": [
+      { "text": "Sweaters and Knitwear" },
+      { "text": "Pants,Slacks and Chinos" },
+      { "text": "Beachwear" },
+      { "text": "Underwear" },
+      { "text": "T-shirts" },
+      { "text": "Nightwear and sleepwear" },
+      { "text": "Jeans" },
+      { "text": "Jackets" },
+      { "text": "Shorts" },
+      { "text": "Shirts" },
+      { "text": "Activewear" },
+      { "text": "Coats" },
+      { "text": "Suits" },
+      { "text": "+More" }
+    ]
+  },
+  {
+    "title": "WOMEN'S SHOES",
+    "data": [
+      { "text": "Sneakers" },
+      { "text": "Heels" },
+      { "text": "Boots" },
+      { "text": "Flats and flat shoes" }
+    ]
+  },
+  {
+    "title": "MEN'S SHOES",
+    "data": [
+      { "text": "Slip-on shoes" },
+      { "text": "Sandals, slides and flip flops" },
+      { "text": "Boots" },
+      { "text": "Sneakers" },
+      { "text": "Lace-ups" }
+    ]
+  },
+  {
+    "title": "WOMEN'S ACCESSORIES",
+    "data": [
+      { "text": "Belts" },
+      { "text": "Scarves and mufflers" },
+      { "text": "Gloves" },
+      { "text": "Wallets and cardholders" },
+      { "text": "Wallets and cardholders" },
+      { "text": "Face masks" },
+      { "text": "Sunglasses" },
+      { "text": "Watches" },
+      { "text": "Phone cases" },
+      { "text": "Hats" },
+      { "text": "Umbrellas" },
+      { "text": "Hair" },
+      { "text": "+More" }
+    ]
+  },
+  {
+    "title": "MEN'S ACCESSORIES",
+    "data": [
+      { "text": "Belts" },
+      { "text": "Scarves and handkerchiefs" },
+      { "text": "Cufflinks" },
+      { "text": "Ties" },
+      { "text": "Gloves" },
+      { "text": "Wallets and cardholders" },
+      { "text": "Watches" },
+      { "text": "Face Masks" },
+      { "text": "Hats" },
+      { "text": "Sunglasses" },
+      { "text": "+More" }
+    ]
+  },
+  {
+    "title": "WOMEN'S BAGS",
+    "data": [
+      { "text": "Shoulder bags" },
+      { "text": "Backpacks" },
+      { "text": "Makeup bags and cosmetic" },
+      { "text": "Cases" },
+      { "text": "Bag accessories" },
+      { "text": "Satchel bags and purses" },
+      { "text": "Clutches and evening bags" },
+      { "text": "Holdalls and weekend bags" },
+      { "text": "Beach and straw bags" },
+      { "text": "Briefcases and work bags" },
+      { "text": "Crossbody bags" },
+      { "text": "Hobo bags" },
+      { "text": "Top-handle bags" },
+      { "text": "Belt bags" },
+      { "text": "Bucket bags" },
+      { "text": "+More" }
+    ]
+  },
+  {
+    "title": "MEN'S BAGS",
+    "data": [
+      { "text": "Messenger bags" },
+      { "text": "Toiletry bags and wash bags" },
+      { "text": "Belt Bags,waist bags" },
+      { "text": "fanny packs" },
+      { "text": "Backpacks" },
+      { "text": "Briefcases and laptop bags" },
+      { "text": "Cases" },
+      { "text": "Tote bags" },
+      { "text": "Pouches" },
+      { "text": "Gym bags" },
+      { "text": "Holdalls and weekend bags" },
+      { "text": "Luggage and suitcases" },
+      { "text": "Duffel bags and weekend" },
+      { "text": "+More" }
+    ]
+  },
+  {
+    "title": "WOMEN'S JEWELRY",
+    "data": [
+      { "text": "Rings" },
+      { "text": "Necklaces" },
+      { "text": "Bracelets" },
+      { "text": "Brooches" },
+      { "text": "Earrings and ear cuffs" }
+    ]
+  },
+  {
+    "title": "MEN'S JEWELRY",
+    "data": [
+      { "text": "Rings" },
+      { "text": "Necklaces" },
+      { "text": "Bracelets" },
+      { "text": "Brooches" },
+      { "text": "Earrings and ear cuffs" }
+    ]
+  }
+]

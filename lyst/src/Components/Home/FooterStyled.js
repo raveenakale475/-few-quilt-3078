@@ -78,10 +78,12 @@ export const RatingScoreBox = styled.div`
 export const ScoreReviewsBox = styled.div`
   & p {
     font-size: 15px;
+    text-align: left;
   }
 `;
 export const SocialMediaHandler = styled.div`
   margin: 10px 0;
+  margin-left: -280px;
   & svg {
     font-size: 30px;
     margin-right: 10px;
