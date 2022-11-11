@@ -55,10 +55,10 @@ const Footer = () => {
           </StarRatings>
           <ScoreReviewsBox>
             <p>
-              TrustScore <b>4.5</b>
+              TrustScore <b>4.4</b>
             </p>
             <p>
-              <b>2668 </b> reviews
+              <b>2,918</b> reviews
             </p>
           </ScoreReviewsBox>
 
@@ -98,7 +98,7 @@ const Footer = () => {
                 Learn about the Lyst app for iPhone, iPad and Android.
               </a>
             </p>
-            <p>© 2022 Lyst</p>
+            <p style={{ marginLeft: "-280px" }}>© 2022 Lyst</p>
           </BottomText>
         </LeftContainer>
         <MiddleContainer>

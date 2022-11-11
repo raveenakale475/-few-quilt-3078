@@ -63,18 +63,18 @@ const BrandSlider = () => {
 
         <BrandWrapper>
           <BrandSlide style={{ alignItems: "center" }}>
-            <BrandItem>RICK OWENS GEOBASKET SNEAKERS</BrandItem>
-            <BrandItem>NIKE METKON SNEAKERS</BrandItem>
-            <BrandItem>SATIN SHORT SLEEVE SHIRTS</BrandItem>
-            <BrandItem>KIMONO JACKETS</BrandItem>
-            <BrandItem>NIKE AIR FORCE 1 LOW SNEAKERS</BrandItem>
+            <BrandItem>THIGH-HIGH BOOTS</BrandItem>
+            <BrandItem>FENDI BAGUETTE BAGS</BrandItem>
+            <BrandItem>TOM FORED JENNIFER SUNGLASSES</BrandItem>
+            <BrandItem>LOEWE GATE BAGS</BrandItem>
+            <BrandItem>TWEED JACKETS</BrandItem>
           </BrandSlide>
           <BrandSlide>
-            <BrandItem>SNAKESKIN SNEAKERS</BrandItem>
-            <BrandItem>CLARK'S WALLABEES</BrandItem>
-            <BrandItem>BIAS-CUT DRESSES</BrandItem>
-            <BrandItem>ELASTIC-WAIST DRESSES</BrandItem>
-            <BrandItem>ZEBRA-PRINT DRESSES</BrandItem>
+            <BrandItem>NIKE DUNK SNEAKERS</BrandItem>
+            <BrandItem>LIGHT BLUE POLO SHIRTS</BrandItem>
+            <BrandItem>MENS GRAPHIC PANTS</BrandItem>
+            <BrandItem>OVERSIZED COATS</BrandItem>
+            <BrandItem>LONGLINE JACKETS</BrandItem>
           </BrandSlide>
         </BrandWrapper>
       </Brands>

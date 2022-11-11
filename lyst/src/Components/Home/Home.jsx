@@ -138,6 +138,7 @@ const BoxPara = styled.p`
   letter-spacing: -1px;
   color: black;
   font-weight: bolder;
+  text-align: left;
 `;
 const BoxSpan = styled.span`
   color: white;
@@ -191,7 +192,12 @@ const Home = () => {
         </Offers>
         <SignupBox>
           <InnerBox>
-            <BoxPara>Sign Up For Smarter Shopping</BoxPara>
+            <BoxPara>
+              Sign Up
+              <br /> For <br />
+              Smarter <br />
+              Shopping
+            </BoxPara>
             <BoxSpan>Join &#8594;</BoxSpan>
           </InnerBox>
         </SignupBox>
