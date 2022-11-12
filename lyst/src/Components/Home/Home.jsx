@@ -14,37 +14,6 @@ const PortFolio = styled.div`
   margin-bottom: 6%;
   margin-top: 80px;
 `;
-const Poster = styled.img`
-  width: 100%;
-  height: 100%;
-  border-bottom: 1px solid black;
-  ${desktop({ display: "none" })}
-  ${tablet({ display: "none" })}
-    ${mobile({ display: "none" })}
-`;
-
-const Poster1 = styled.img`
-  width: 100%;
-  height: 100%;
-  display: none;
-  ${desktop({ display: "block" })}
-  ${tablet({ display: "none" })}
-    ${mobile({ display: "none" })}
-`;
-
-const Poster2 = styled.img`
-  width: 100%;
-  height: 100%;
-  display: none;
-  ${tablet({ display: "block" })}
-  ${mobile({ display: "none" })}
-`;
-const Poster3 = styled.img`
-  width: 100%;
-  height: 100%;
-  display: none;
-  ${mobile({ display: "block" })}
-`;
 
 const InnerContainer = styled.div`
   margin-top: 6%;
