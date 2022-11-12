@@ -18,8 +18,11 @@ import {
   InputLeftElement,
 } from "@chakra-ui/react";
 import { ChevronDownIcon, SearchIcon } from "@chakra-ui/icons";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
+  const logoNavigate = useNavigate();
   return (
     <>
       <Flex minWidth="max-content" alignItems="center" fontSize={"14px"}>
@@ -58,6 +61,7 @@ function Navbar() {
           backgroundColor={"black"}
           p={"-0.9"}
           fontSize={"14"}
+          onClick={() => navigate("/Signup")}
         >
           Sign Up Or Log In
         </Button>
@@ -70,6 +74,7 @@ function Navbar() {
             alt={"lyst"}
             p={"5"}
             _hover={{ cursor: "pointer" }}
+            onClick={() => logoNavigate("/")}
           />
         </Box>
 
