@@ -34,7 +34,7 @@ const SignUp = () => {
         if (res.token) {
           login(res.token);
           alert("Signup Successfully");
-          navigate("/");
+          navigate("/Login");
         }
       })
       .catch((err) => alert("Please enter correct credentials"));
