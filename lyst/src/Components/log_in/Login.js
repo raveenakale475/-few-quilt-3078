@@ -5,13 +5,37 @@ import {
 } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import styles from "./log_in.module.css";
-import { useNavigate } from "react-router-dom";
+import { json, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar";
 import Footer from "../Home/Footer";
-
+import { useState, useContext } from "react";
+import { LoginSignup } from "../../Context";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setpassword] = useState("");
+  const { login } = useContext(LoginSignup);
+
+  const HandleClick = (e) => {
+    e.preventDefault();
+    fetch(`https://reqres.in/api/login`, {
+      method: "POST",
+      body: JSON.stringify({ email, password }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.token) {
+          login(res.token);
+          alert("Login successfully");
+          navigate("/");
+        }
+      })
+      .catch((err) => navigate("/Signup"));
+  };
   return (
     <>
       <Navbar />
@@ -35,8 +59,11 @@ const Login = () => {
                 </div>
                 <input
                   type="email"
+                  name="email"
                   placeholder="Enter your email address"
                   id="login__email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className={styles.rgil}>
@@ -47,12 +74,15 @@ const Login = () => {
                 </div>
                 <input
                   type="password"
+                  name="password"
                   placeholder="Enter your password"
                   id="login__password"
+                  value={password}
+                  onChange={(e) => setpassword(e.target.value)}
                 />
               </div>
 
-              <button type="submit" className={styles.rg}>
+              <button type="submit" className={styles.rg} onClick={HandleClick}>
                 Sign In
               </button>
 

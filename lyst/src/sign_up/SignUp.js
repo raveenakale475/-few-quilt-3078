@@ -2,6 +2,8 @@ import "./sign_up_login.css";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Home/Footer";
 import { useNavigate } from "react-router-dom";
+import { useState, useContext } from "react";
+import { LoginSignup } from "../Context";
 
 import {
   BsFillSuitHeartFill,
@@ -12,6 +14,31 @@ import {
 const SignUp = () => {
   const signupNavigate = useNavigate();
   const loginNavigate = useNavigate();
+
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setpassword] = useState("");
+  const { login } = useContext(LoginSignup);
+
+  const HandleClick = (e) => {
+    e.preventDefault();
+    fetch(`https://reqres.in/api/register`, {
+      method: "POST",
+      body: JSON.stringify({ email, password }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.token) {
+          login(res.token);
+          alert("Signup Successfully");
+          navigate("/");
+        }
+      })
+      .catch((err) => alert("Please enter correct credentials"));
+  };
   //Hooks
 
   // functions
@@ -77,6 +104,9 @@ const SignUp = () => {
                 type="email"
                 placeholder="Enter your email address"
                 id="sign-up__email"
+                name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="rgi">
@@ -87,8 +117,11 @@ const SignUp = () => {
               </div>
               <input
                 type="password"
+                name="password"
                 placeholder="min 8 characters"
                 id="sign-up__password"
+                value={password}
+                onChange={(e) => setpassword(e.target.value)}
               />
             </div>
             <div className="rgi">
@@ -98,7 +131,7 @@ const SignUp = () => {
                 </label>
               </div>
               <input
-                type="text"
+                type="password"
                 placeholder="Enter the correct password"
                 id="sign-up__confirm-password"
               />
@@ -114,7 +147,11 @@ const SignUp = () => {
               </label>
             </div>
 
-            <button type="submit" className="sign-up__submit-btn">
+            <button
+              type="submit"
+              className="sign-up__submit-btn"
+              onClick={HandleClick}
+            >
               Join Lyst
             </button>
 
