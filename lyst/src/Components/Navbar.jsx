@@ -70,11 +70,13 @@ function Navbar() {
       <Flex m={"auto"} borderBottom={"1px solid black"}>
         <Box border={"0px solid green"} width={"150px"}>
           <Image
-            src="https://pydata.org/static/uploads/sponsor_logos/LystLogo.png"
+            src="https://i.ibb.co/H7HjBnF/photo-2022-11-14-13-40-45.jpg"
             alt={"lyst"}
             p={"5"}
             _hover={{ cursor: "pointer" }}
             onClick={() => logoNavigate("/")}
+            width={"90%"}
+            borderRadius={"80%"}
           />
         </Box>
 
