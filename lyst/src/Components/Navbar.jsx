@@ -16,13 +16,17 @@ import {
   Input,
   InputGroup,
   InputLeftElement,
+  Text,
+  Heading,
 } from "@chakra-ui/react";
 import { ChevronDownIcon, SearchIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Navbar() {
   const navigate = useNavigate();
   const logoNavigate = useNavigate();
+  const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
   return (
     <>
       <Flex minWidth="max-content" alignItems="center" fontSize={"14px"}>
@@ -54,30 +58,48 @@ function Navbar() {
           </Menu>
         </Box>
 
-        <Button
-          m={"2"}
-          mr={"5"}
-          color={"white"}
-          backgroundColor={"black"}
-          p={"-0.9"}
-          fontSize={"14"}
-          onClick={() => navigate("/Signup")}
-        >
-          Sign Up Or Log In
-        </Button>
+        {isAuthenticated ? (
+          <Flex flexDirection="column" gap="10px">
+            <Text fontSize="sm" marginTop={"10px"}>
+              Welcome {user.name}
+            </Text>
+            <Button
+              backgroundColor={"black"}
+              color="white"
+              border="1px solid #ccc"
+              _hover={{
+                color: "white",
+              }}
+              onClick={() =>
+                logout({
+                  logoutParams: { returnTo: window.location.origin },
+                })
+              }
+            >
+              Logout
+            </Button>
+          </Flex>
+        ) : (
+          <Button
+            backgroundColor={"black"}
+            color="white"
+            border="1px solid #ccc"
+            _hover={{
+              color: "white",
+            }}
+            onClick={() => loginWithRedirect()}
+          >
+            Login
+          </Button>
+        )}
       </Flex>
 
       <Flex m={"auto"} borderBottom={"1px solid black"}>
         <Box border={"0px solid green"} width={"150px"}>
-          <Image
-            src="https://i.ibb.co/H7HjBnF/photo-2022-11-14-13-40-45.jpg"
-            alt={"lyst"}
-            p={"5"}
-            _hover={{ cursor: "pointer" }}
-            onClick={() => logoNavigate("/")}
-            width={"90%"}
-            borderRadius={"80%"}
-          />
+          <Heading alignItems={"center"} fontWeight="900">
+            LYST
+          </Heading>
+          
         </Box>
 
         <Box border={"0px solid blue"} width={"100px"}>

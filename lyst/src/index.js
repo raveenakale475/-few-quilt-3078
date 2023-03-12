@@ -5,16 +5,23 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter } from "react-router-dom";
-import LoginSignupProvider from "./Context";
+import { Auth0Provider } from "@auth0/auth0-react";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <LoginSignupProvider>
+  <Auth0Provider
+    domain="dev-dl8d75511ykqrt50.uk.auth0.com"
+    clientId="aXC3wlF331h9Hqu5GnMX3w9ej7jJ3acj"
+    authorizationParams={{
+      redirect_uri: window.location.origin,
+    }}
+  >
     <ChakraProvider>
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </ChakraProvider>
-  </LoginSignupProvider>
+  </Auth0Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
